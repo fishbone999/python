@@ -1,0 +1,22 @@
+import random
+answer = random.randint(1,100)
+print("Let's start a numbergame!")
+temp = input("Guess a number:\n")
+guess = int(temp)
+i = 1
+while i <= 10:
+    if guess == answer:
+        print("Congratulations, you did it!")
+        break
+    else:
+        if guess > answer:
+            print("oops，it's wrong")
+            print("it's too big")
+        else:
+            print("oops，it's wrong")
+            print("it's too small")
+        temp = input("please input it again:\n")
+        guess = int(temp)
+        i += 1
+print("end")
+
